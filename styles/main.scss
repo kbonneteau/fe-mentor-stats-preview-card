@@ -12,30 +12,62 @@ body {
     @include flex-centering(column);
 }
 
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 .stats-card {
     background-color: $card-background;
     width: 90vw;
     border-radius: 10px;
     margin: 3rem 0;
     @include flex-centering(column);
-    // justify-content: flex-start;
-    // gap: 1rem;
+    
+    @include tablet {
+        flex-direction: row-reverse;
+    }
+    
+    &__content-wrapper {
+        @include flex-centering(column);
+        flex-basis: 50%;
 
+        @include tablet {
+            align-items: flex-start;
+            padding: 3rem 0 3rem 5rem;
+        }
+    }
+    
     &__hero {
         position: relative;
         width: 90vw;
         height: 15.625rem;
         border-radius: 10px 10px 0 0;
         background: 
-          url('../assets/images/image-header-mobile.jpg')
-          center / cover;
+        url('../assets/images/image-header-mobile.jpg')
+        center / cover;
         background-color: $accent-color;
         background-blend-mode: multiply;
+        
+        @include tablet {
+            flex-basis: 50%;
+            height: 25.1875rem;
+            border-radius: 0 10px 10px 0;
+        }
     }
-
+    
     &__heading {
         text-align: center;
         padding: 1rem;
+
+        @include tablet {
+            text-align: left;
+            padding: 0;
+            width: 18ch;
+        }
 
         &--highlight {
             color: $accent-color;
@@ -49,6 +81,11 @@ body {
         font-family: $site-font-alt;
         color: $stat-headings;
         line-height: 1.5;
+
+        @include tablet {
+            text-align: left;
+            width: 40ch;
+        }
     }
 
     &__list {
@@ -59,6 +96,11 @@ body {
         gap: 1rem;
         text-align: center;
         margin-bottom: 2rem;
+
+        @include tablet {
+            flex-direction: row;
+            flex-basis: 100%;
+        }
     }
 
     &__stat {
@@ -67,6 +109,10 @@ body {
         letter-spacing: 1px;
         color: $stat-headings;
         line-height: 1.5;
+
+        @include tablet {
+            flex-grow: 1;
+        }
 
         &--number {
             font-family: $site-font;
