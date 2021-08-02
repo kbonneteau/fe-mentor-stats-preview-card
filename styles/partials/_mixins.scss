@@ -12,3 +12,10 @@
         @content;
     }
 }
+
+@mixin flex-centering($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}

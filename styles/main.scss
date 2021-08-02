@@ -7,16 +7,35 @@
 body {
     margin: 0;
     font-family: $site-font;
+    background-color: $main-background;
+    color: $main-text;
+    @include flex-centering(column);
 }
 
 .stats-card {
+    background-color: $card-background;
+    width: 90vw;
+    border-radius: 10px;
+    margin: 3rem 0;
+    @include flex-centering(column);
 
     &__hero {
-
+        position: relative;
+        width: 90vw;
+        height: 15.625rem;
+        border-radius: 10px 10px 0 0;
+        background: 
+          url('../assets/images/image-header-mobile.jpg')
+          center / cover;
+        background-color: $accent-color;
+        background-blend-mode: multiply;
     }
 
     &__heading {
 
+        &--highlight {
+            color: $accent-color;
+        }
     }
 
     &__description {
@@ -30,7 +49,7 @@ body {
     &__stat {
 
         &--number {
-            
+
         }
     }
 }

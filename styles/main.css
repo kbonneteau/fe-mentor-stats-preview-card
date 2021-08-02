@@ -7,4 +7,33 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
+  background-color: #090b1a;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-card {
+  background-color: #1b1938;
+  width: 90vw;
+  border-radius: 10px;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stats-card__hero {
+  position: relative;
+  width: 90vw;
+  height: 15.625rem;
+  border-radius: 10px 10px 0 0;
+  background: url("../assets/images/image-header-mobile.jpg") center/cover;
+  background-color: #aa5cdb;
+  background-blend-mode: multiply;
+}
+.stats-card__heading--highlight {
+  color: #aa5cdb;
 }/*# sourceMappingURL=main.css.map */
