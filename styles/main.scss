@@ -1,0 +1,36 @@
+@use './partials/variables' as *;
+@use './partials/mixins'    as *;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: $site-font;
+}
+
+.stats-card {
+
+    &__hero {
+
+    }
+
+    &__heading {
+
+    }
+
+    &__description {
+
+    }
+
+    &__list {
+
+    }
+
+    &__stat {
+
+        &--number {
+            
+        }
+    }
+}
