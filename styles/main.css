@@ -34,6 +34,43 @@ body {
   background-color: #aa5cdb;
   background-blend-mode: multiply;
 }
+.stats-card__heading {
+  text-align: center;
+  padding: 1rem;
+}
 .stats-card__heading--highlight {
   color: #aa5cdb;
+}
+.stats-card__description {
+  margin-top: 0;
+  width: 30ch;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+}
+.stats-card__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.stats-card__stat {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+}
+.stats-card__stat--number {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
